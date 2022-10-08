@@ -1,0 +1,49 @@
+<html>
+<head></head>
+<body>
+    <script>
+        // use #vertical-bounce-handler-at-knot-labirint-from-rotated
+        // keep
+        let pencil = new Pencil()
+        let sceneWalkingAroundLabirintRotating = new SceneWalkingAroundLabirint()
+
+        let draftFabrikk = new DraftFabrikk()
+
+        let bottomStatement = draftFabrikk.constructBottomStatement()
+
+        pencil.rememberScene(sceneWalkingAroundLabirintRotating, new SceneWalkingAroundLabirintAtStart())
+        pencil.useScene(sceneWalkingAroundLabirintRotating)
+
+        let knotLabirintFromSceneWalkingAroundLabirintAtStart = pencil.constructKnot()
+
+        draftFabrikk.connectKnotToBottomStatement(bottomStatement, knotLabirintFromSceneWalkingAroundLabirintAtStart)
+
+        // keep
+        pencil.provideScene().putKnotConnectedToBottomStatement(knotLabirintFromSceneWalkingAroundLabirintAtStart)
+
+        // keep KnotLabirint
+
+        // keep KnotLabirintRotatingAtStart
+
+        // chalk KnotLabirintRotatingAtStart
+
+        // keep KnotLabirintRotatingAtAnotherPointerBelongings
+
+
+        // keep KnotLabirint
+
+        // keep KnotLabirintRotatingAtStart
+        // keep KnotLabirintRotatingAtAnotherPointerBelongings
+
+        // chalk KnotLabirintRotatingAtAnotherPointerBelongings
+
+        // keep KnotLabirintRotatingAtRemainingPointerBelongings
+
+        pencil.draw()
+
+        // keep !
+    </script>
+
+</body>
+
+</html>
